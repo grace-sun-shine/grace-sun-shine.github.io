@@ -33,12 +33,14 @@ h2{
 }
 
 #comet div{
-    color:white;
-    font-size: 200%;
+    opacity:0;
 
 }
 
 #banner:hover #dot1{
+    opacity:1;
+    color:white;
+    font-size: 200%;
     animation: animation1 2s ease-in infinite;
 }
 
@@ -53,6 +55,9 @@ h2{
 }
 
 #banner:hover #dot2{
+    opacity:1;
+    color:white;
+    font-size: 200%;
     animation: animation2 5s linear infinite;
 }
 
@@ -77,6 +82,9 @@ h2{
 }
 
 #banner:hover #dot3{
+    opacity:1;
+    color:white;
+    font-size: 200%;
     animation: animation3 3s ease-in infinite;
 }
 
@@ -94,6 +102,9 @@ h2{
 }
 
 #banner:hover #dot4{
+    opacity:1;
+    color:white;
+    font-size: 200%;
     animation: animation4 4s ease-in infinite;
 }
 
