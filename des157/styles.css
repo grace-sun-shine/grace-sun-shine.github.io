@@ -1,0 +1,270 @@
+body{
+    max-width:1200px;
+    min-width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: 'Tinos', serif;
+}
+
+header{
+    text-align: center;
+
+}
+
+h1{
+    font-family: 'Potta One', cursive;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Redressed', cursive;
+}
+
+#banner{
+    height:300px;
+    width:780px;
+    margin: 30px auto 0 auto;
+    padding:10px;
+    border-radius: 20px;
+
+    background-image: linear-gradient(185deg,#050526, #14255d,#1d4080,#5680a8,#c7b2bd,#10142f);
+
+}
+
+#comet div{
+    color:white;
+    font-size: 200%;
+
+}
+
+#banner:hover #dot1{
+    animation: animation1 2s ease-in infinite;
+}
+
+@keyframes animation1 {
+    from { 
+        margin-top: -50px; 
+    }
+    to { 
+        margin-top: 300px; 
+        margin-left: -30%;
+    }
+}
+
+#banner:hover #dot2{
+    animation: animation2 5s linear infinite;
+}
+
+@keyframes animation2 {
+    0% { 
+        margin-top: -50px; 
+    }
+    25% { 
+        margin-top: -50px; 
+    }
+    50% { 
+        margin-top: -50px; 
+    }
+    75% { 
+        margin-top: 300px; 
+        margin-left: -40%;
+    }
+    100%{
+        margin-top: 300px; 
+        margin-left: -40%;
+    }
+}
+
+#banner:hover #dot3{
+    animation: animation3 3s ease-in infinite;
+}
+
+@keyframes animation3 {
+    0% { 
+        margin-top: -50px; 
+    }
+    66% { 
+        margin-top: -50px; 
+    }
+    100%{
+        margin-top: 350px; 
+        margin-left: -30%;
+    }
+}
+
+#banner:hover #dot4{
+    animation: animation4 4s ease-in infinite;
+}
+
+@keyframes animation4 {
+    0% { 
+        margin-top: -50px; 
+    }
+    33%{
+        margin-top: -50px; 
+    }
+    66% { 
+        margin-top: 300px; 
+        margin-left: -30%;
+    }
+    100%{
+        margin-top: 300px; 
+        margin-left: -30%;
+    }
+}
+
+#dot1{
+    text-align: left;
+    padding-left: 250px;
+}
+
+#dot2{
+    text-align: left;
+    padding-left: 450px;
+}
+
+#dot3{
+    text-align: left;
+    padding-left: 720px;
+}
+
+#dot4{
+    text-align: left;
+    padding-left: 560px;
+}
+
+
+#moon{
+    position: relative;
+    top: -290px;
+    left:250px;
+    color: #fff99e;
+    text-align: left;
+    font-size: 200%;
+    font-style: bold;
+    opacity: 0.9;
+}
+
+#star span{
+    color: white;
+    font-size: 50%;
+    text-align: left;
+
+    animation-name: starcolor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes starcolor {
+    from{
+        color:white;
+        opacity:1;
+    }
+    to{
+        color:white;
+        opacity:0;
+    }
+}
+
+#star1{
+    position: relative;
+    top: -290px;
+    left:-320px;
+}
+
+#star2{
+    position: relative;
+    top: -340px;
+    left: -280px;
+}
+
+#star3{
+    position: relative;
+    top: -260px;
+    left: -210px;
+}
+
+#star4{
+    position: relative;
+    top: -320px;
+    left: 0px;
+}
+
+#star5{
+    position: relative;
+    top: -315px;
+    left: -120px;
+}
+
+#star6{
+    position: relative;
+    top: -275px;
+    left: 100px;
+}
+
+#star7{
+    position: relative;
+    top: -305px;
+    left: 240px;
+}
+
+#star8{
+    position: relative;
+    top: -324px;
+    left: 300px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section{
+    margin: 10px;
+    padding:10px;
+    padding-right: 30px;
+    border: 2px dotted #040514;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    line-height: 150%;
+    padding:5px;
+}
+
+li:hover{
+    background-color:#14255d;
+    color:whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover span{
+   color:yellow;
+}
+
+footer{
+    margin:20px;
+    text-align: center;
+    line-height: 150%;
+}
+
+a:link {
+    text-decoration: none;
+    padding:5px;
+    color: black;
+  }
+
+a:hover{
+    background-color:#14255d;
+    color:whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
