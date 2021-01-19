@@ -294,3 +294,7 @@ a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
+
+a:visited{
+    color:black;
+  }

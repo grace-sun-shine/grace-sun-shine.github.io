@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp: DOM</title>
+    <style>
+        body{
+            max-width:1000px;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exp: DOM</h1>
+    
+    <main>
+        <h2>Find games that are suitable for your Party!</h2>
+        <div id = "text"></div>
+        <ul></ul>
+    </main>
+    
+</body>
+
+<script>
+    /*
+    My program provide different game choice for users when they have different group size,
+    when the group number they enter is smaller than 6, it is a small group; when the group number they enter is larger than 5, it is a larger group; 
+    my JS code will then loop through the game array and append it as "ul" on the page.
+    */
+    function getMessage(){
+        var peopleNum = prompt("Welcome, how many people is in your party?");
+        return peopleNum;
+    }
+
+    function partyGame(){
+        var peopleNum = getMessage();
+        if(peopleNum < 6){
+            var smallGame = ["Art Effects (Drawing)","Botticelli (Guessing)","Catch the Ball (Get-to-know-you)","Connecting Stories (Get-to-know-you, Teambuilding)"];
+            var myPara = document.createElement("p");
+            var myText = document.createTextNode(`${peopleNum} people! Looks like this is a small group, the game I suggested are: `);
+            myPara.appendChild(myText);
+            document.getElementById("text").appendChild(myPara);
+
+            for (var i=0; i<smallGame.length; i++){
+                var myGame = document.createElement("li");
+                var games = document.createTextNode(`${smallGame[i]}; `);
+                myGame.appendChild(games);
+                document.querySelector("ul").appendChild(myGame);
+            }
+        }else{
+            var largeGame = ["Balloon Stomp – Pop! Try to stomp on each other’s balloons. Be the only team left with your balloons intact",
+            "Bob the Weasel – Simple circle game, in which the person in the middle has to find a hidden object",
+            "The Cup Game – Follow the motions- and be the last person to stay in the game",
+            "Freeze Tag – Active, fun game for kids. Get away from the people who are “it”, or else you’ll be frozen"];
+            var myPara = document.createElement("p");
+            var myText = document.createTextNode(`${peopleNum} people! Looks this is a large group, the game I suggested are: `);
+            myPara.appendChild(myText);
+            document.getElementById("text").appendChild(myPara);
+
+            for (var i=0; i<largeGame.length; i++){
+                var myGame = document.createElement("li");
+                var games = document.createTextNode(`${largeGame[i]}; `);
+                myGame.appendChild(games);
+                document.querySelector("ul").appendChild(myGame);
+            }
+        }    
+    }
+
+    partyGame();
+</script>
+</html>
