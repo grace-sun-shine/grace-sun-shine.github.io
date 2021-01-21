@@ -280,7 +280,6 @@ footer{
 
 footer a{
     padding:10px;
-    margin:10px;
 }
 
 a:link {
@@ -295,7 +294,3 @@ a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
-
-a:visited{
-    color:black;
-  }
