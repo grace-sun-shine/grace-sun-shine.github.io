@@ -41,6 +41,10 @@ a:link {
     color: black;
   }
 
+a:visited{
+    color:black;
+}
+
 a:hover{
     background-color:#14255d;
     color:whitesmoke;
