@@ -1,0 +1,49 @@
+body{
+    max-width:1000px;
+    margin: auto;
+    font-family: 'Tinos', serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Potta One', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin:50px;
+}
+
+h2{
+    font-family: 'Redressed', cursive;
+    font-size: 28px;
+}
+
+article{
+    padding:0 35px 10px 35px;
+    margin:20px;
+    border: 2px #14255d dotted;
+    border-radius: 20px;
+}
+
+footer{
+    margin:30px;
+    text-align: center;
+    line-height: 150%;
+}
+
+footer a{
+    padding:10px;
+    margin:10px;
+}
+
+a:link {
+    text-decoration: none;
+    padding:5px;
+    color: black;
+  }
+
+a:hover{
+    background-color:#14255d;
+    color:whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
