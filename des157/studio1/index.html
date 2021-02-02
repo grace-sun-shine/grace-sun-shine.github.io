@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witchcraft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Signika&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main>
+
+        <section>
+
+            <img src="images/magic.png" alt="magic 1">
+
+            <section id = "right">
+                <h1>Welcome to Witchcraft School</h1>
+
+                <form id="myForm">
+                    <nav>
+                        <label for="noun1">Enter Your Name: </label>
+                        <input type="text" id="noun1">
+                    </nav>
+        
+                    <nav>
+                        <label for="house">Choose Your House: </label>
+                        <select id="house">
+                            <option value="">---</option>
+                            <option value="Gryffindor">Gryffindor</option>
+                            <option value="Slytherin">Slytherin</option>
+                            <option value="Ravenclaw">Ravenclaw</option>
+                            <option value="Hufflepuff">Hufflepuff</option>
+                        </select>
+                    </nav>
+                    
+                    <nav>
+                        <label for="noun2">Provide An Animal: </label>
+                        <input type="text" id="noun2">
+                    </nav>
+                    
+                    <nav>
+                        <label for="adj">Provide An Adjective: </label>
+                        <input type="text" id="adj">
+                    </nav>
+                    
+                    <nav>
+                        <label for="verb">Provide A Verb: </label>
+                        <input type="text" id="verb">
+                    </nav>
+                
+                    <nav>
+                        <input id = "submit" type = "submit" value="Send">
+                    </nav>
+                </form>
+        
+            </section>
+       
+        </section>
+        
+        <section id="overlay" class="hidden">
+            <article>
+                <div id="madlib"></div>
+                <button class="corner close">&otimes;</button>
+            </article>
+           
+        </section>
+       
+
+    </main>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5 </a>
+        |
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    
+    
+</body>
+</html>

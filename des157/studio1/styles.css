@@ -1,0 +1,154 @@
+body{
+    max-width: 1366px;
+    max-height: 768px;
+    padding: 40px;
+    padding-left:10px;
+    font-family: 'Signika', sans-serif;
+    background-image: linear-gradient(185deg,#0c446d, #0d1b2b);
+}
+
+h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: #45f1ff;
+    text-align: center;
+}
+
+main{
+    margin: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width:800px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#0c446d;
+    background-color: whitesmoke;
+    padding:30px;
+    border-radius: 40px;
+    border: 3px solid gold;
+    height: 370px;
+    max-width: 320px;
+}
+
+form input{
+    width: 120px;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+#submit{
+    justify-content: flex-end;
+    background-color: gold;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 3px #888888;
+    cursor: pointer;
+}
+
+form select{
+    width: 140px;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+form nav{
+    margin:5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color:#E0D3AF;
+    padding: 50px;
+    padding-top: 100px;
+    font-size:18px;
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.corner {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: transparent;
+    color:#0c446d;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+footer{
+    margin:30px;
+    text-align: center;
+    line-height: 150%;
+    color:whitesmoke;
+}
+
+footer a{
+    padding:5px;
+    margin:10px;
+}
+
+a:link {
+    text-decoration: none;
+    padding:5px;
+    color: whitesmoke;
+  }
+
+a:visited{
+    color:whitesmoke;
+}
+
+a:hover{
+    background-color:#45f1ff;
+    color:#0c446d;
+    border-radius: 5px;
+    cursor: pointer;
+}
