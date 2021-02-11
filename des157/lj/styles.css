@@ -33,9 +33,15 @@ section{
 
 img{
     display: block;
-    max-width: 500px;
+    max-width: 400px;
     margin:auto;
 }
+
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
 
 footer{
     margin:30px;
