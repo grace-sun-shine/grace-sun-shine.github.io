@@ -4,16 +4,26 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+h1{
+    text-align: center;
+    font: black;
+}
+
 h4{
     text-align: center;
-    color: grey;
-    margin-bottom: 0;
+    color: darkgrey;
+    margin-bottom: 10px;
 }
+
+h4 a{
+    color: grey;
+}
+
 
 /*---------hover-----------*/
 #container {
-    width: 1094px;
-    height: 768px;
+    width: 985px;
+    height: 691px;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -30,7 +40,6 @@ h4{
     position: absolute;
     transition: all 2s ease;
 }
-
 
 #topleft {
     top: 0;
@@ -64,7 +73,7 @@ h4{
 }
 
 .start {
-    height: 768px;
+    max-width: 985px;
     left: 0;
     top: 0;
 }
@@ -79,22 +88,22 @@ h4{
 
 .topleft {
     top: 0;
-    left: 0;
+    left: -50px;
 }
 
 .topright {
     top: 0;
-    left: -666px;
+    left: -750px;
 }
 
 .bottomleft {
     left: -200px;
-    top: -450px;
+    top: -490px;
 }
 
 .bottomright {
-    top: -450px;
-    left: -666px;
+    top: -490px;
+    left: -650px;
 }
 
 .center {
@@ -124,11 +133,10 @@ h4{
 #overlay article {
     box-sizing: border-box;
     background-color:whitesmoke;
-    padding: 50px;
-    padding-top: 100px;
+    padding: 80px 40px 20px 40px;
     font-size:18px;
-    width: 50vw;
-    height: 70vh;
+    width: 40vw;
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -137,9 +145,30 @@ h4{
     overflow-y: scroll;
 }
 
+#overlay p{
+    margin:10px;
+}
+
+.text {
+    padding:10px;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    width:30vw;
+    margin: 30px auto 10px auto;
+    border-radius: 10px;
+    font-style:italic;
+    font: light;
+
+}
+
 #overlay img{
-    width:20vw;
+    max-width:30vw;
+    max-height:45vh;
     height:auto;
+    margin:auto;
+    display:flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    border-radius: 20px;
 }
 
 .corner {

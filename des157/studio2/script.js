@@ -38,7 +38,11 @@
     for (const eachBtn of closeBtns) {
         eachBtn.addEventListener('click', function (event) {
             event.preventDefault();
-            document.querySelector('.showing').className = 'hidden';
+            const shown = document.querySelectorAll('.showing')
+            for (const allShown of shown){
+                allShown.className = 'hidden';
+                console.log("close");
+            }
         });
     }
 
