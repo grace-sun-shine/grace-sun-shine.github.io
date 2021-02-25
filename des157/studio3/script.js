@@ -8,6 +8,11 @@
     const score = document.getElementById('score');
     const actionArea = document.getElementById('actions');
 
+    const player1win = new Audio('media/player1win.m4a');
+    const player2win = new Audio('media/player2win.m4a');
+    const start = new Audio('media/start.m4a');
+    const rollsound = new Audio('media/roll.m4a');
+
     //set information for gameData
     var gameData = {
         dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
@@ -24,7 +29,8 @@
     //after click on start button, it hide instruction and start the game
     startGame.addEventListener("click",function(){
         gameData.index = Math.round(Math.random());
-        console.log(gameData.index);
+        
+        start.play();//play the start sound
 
         document.getElementById('overlay').className = 'showing';
         document.getElementById('intro').className = 'hidden';
@@ -36,8 +42,6 @@
         //if click on quit, go back to the main site
         document.getElementById('quit').addEventListener("click",function(){
             location.reload();
-            document.getElementById('overlay').className = 'hidden';
-            document.getElementById('intro').className = 'showing';
         });
 
         setUpTurn();
@@ -48,6 +52,7 @@
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
         document.getElementById('roll').addEventListener('click',function(){
+            rollsound.play(); //play the sound of roll
             throwDice();
         });
 
@@ -83,11 +88,14 @@
             console.log(gameData.index, gameData.score[gameData.index], gameData.rollSum);
             actionArea.innerHTML = `<button id="rollagain"> Roll again</button> or <button id = "pass">Pass</button>`;
             
-            document.getElementById('rollagain').addEventListener( 'click' , function ( ) {
+            document.getElementById('rollagain').addEventListener( 'click' , function () {
+                console.log("play");
+                rollsound.play(); //play the sound of roll
                 setUpTurn() ;
             });
             document.getElementById('pass').addEventListener( 'click', function() {
-                gameData.index ? (gameData.index = 0):(gameData.index = 1);
+                rollsound.play(); //play the sound of roll
+                gameData.index ? (gameData.index = 0):(gameData.index = 1);     
                 setUpTurn();
             });
 
@@ -105,11 +113,9 @@
             //start the audio that state who wins the game
             if(gameData.players[gameData.index] === "player 1"){
                 console.log("player1 win")
-                const player1win = new Audio('media/player1win.m4a');
                 player1win.play();
             }else if(gameData.players[gameData.index] === "player 2"){
                 console.log("player2 win")
-                const player2win = new Audio('media/player2win.m4a');
                 player2win.play();
             }
             actionArea.innerHTML = ""; 
