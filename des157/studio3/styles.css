@@ -1,0 +1,125 @@
+body {
+    padding: 50px;
+    line-height: 1.5em;
+    max-width: 1366px;
+    max-height: 768px;
+    font-family: 'Tinos', serif;
+    color:#021300;
+    background-color: #EEC6C4;
+}
+
+img{
+    max-width: 100px;
+}
+
+h1{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    font-size:3em;
+}
+
+h2{
+    font-family: 'Patua One', cursive;
+    font-size:2em;
+    font:bold;
+}
+
+p{
+    font-size:1.2em;
+}
+
+article{
+    padding:30px;
+    max-width: 60vw;
+    margin:auto;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.25)
+}
+
+#startgame, #quit{ 
+    padding: 15px 25px 15px 25px;
+    color:#F4C5B1;
+    background-color: #722127;
+    cursor: pointer;
+}
+
+#startgame:hover, #quit:hover{
+    color:#722127;
+    background-color: #F4C5B1;
+}
+
+
+div {
+    padding: 20px;
+    max-width: 60vw;
+    margin:auto;
+}
+
+button{
+    margin: 5px;;
+    padding: 10px;
+}
+
+#gamecontrol{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------overlay-----------*/
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#overlay{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    max-width: 60vw;
+    margin:auto;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------footer-----------*/
+footer{
+    margin:30px;
+    text-align: center;
+    line-height: 150%;
+}
+
+footer a{
+    padding:10px;
+}
+
+a:link {
+    text-decoration: none;
+    padding:5px;
+    color: #021300;
+  }
+
+a:visited{
+    color:#021300;
+}
