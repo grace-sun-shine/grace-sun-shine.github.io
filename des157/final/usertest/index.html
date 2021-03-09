@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witchcraft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Signika&family=Srisakdi:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main>
+
+        <section>
+            <h1>Choose Your Witchcraft School</h1>
+
+            <form id="myForm">
+                <div id="name" class="showing">
+                    <label for="noun1">Enter a Name: </label>
+                    <input type="text" id="noun1">
+                </div>
+    
+                <div id="selectHouse" class="hidden">
+                    <label for="house">Choose Your House: </label>
+                    <select id="house">
+                        <option value="">---</option>
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Slytherin">Slytherin</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                    </select>
+                </div>
+                
+                <div id="animal" class="hidden">
+                    <label for="noun2">Provide An Animal: </label>
+                    <input type="text" id="noun2">
+                </div>
+                
+                <div id="adjective" class="hidden">
+                    <label for="adj">Provide An Adjective: </label>
+                    <input type="text" id="adj">
+                </div>
+                
+                <div id="selectVerb" class="hidden">
+                    <label for="verb">Provide a Verb: </label>
+                    <input type="text" id="verb">
+                </div>
+            
+            </form>
+               
+        </section>
+
+        <div id="nextPage" class="showing">
+            <div class = "contain">
+                <input id = "previous" class = "hidden" type = "button" value="<">
+                <span id="order"></span>
+                <input id = "next" type = "button" value=">">
+            </div>
+        </div>
+
+        <div id="sub" class="hidden">
+            <div class = "contain">
+                <input id = "back" type = "button" value="<">
+                <span id="lastOrder">5/5</span>
+                <input id = "submit" type = "submit" value="Submit">
+            </div>
+            
+        </div>
+
+       
+        <section id="overlay" class="hidden">
+            <article>
+                <div id="madlib"></div>
+                <button class="corner close">&otimes;</button>  
+            </article>
+            <button id="quit" class="close">Restart</button>
+                
+           
+        </section>
+       
+
+    </main>
+
+    <footer>
+        <a HREF="mailto:
+        &#121;&#111;&#117;&#114;&#110;&#097;&#109;&#101;&#064;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;">
+        Contact Me
+        </a>
+        |
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        |
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    
+    
+</body>
+</html>
