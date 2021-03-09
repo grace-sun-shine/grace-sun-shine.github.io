@@ -215,3 +215,46 @@ a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+/*------greeting-------*/
+#greeting {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#greeting article {
+    box-sizing: border-box;
+    font-size:25px;
+
+    color: black;
+    background-color:whitesmoke;
+    padding: 40px;
+    width: 45vw;
+    height: 50vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+#start{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:20px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+
+    background-color:whitesmoke;
+    border:none;
+    border-radius: 30px;
+}

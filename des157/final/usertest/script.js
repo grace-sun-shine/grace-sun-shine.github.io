@@ -6,6 +6,15 @@
     const house = document.querySelector("#house");
     const madlib = document.getElementById("madlib");
     const closeBtns = document.querySelectorAll('.close');
+
+    //close greeting page
+    const greeting = document.getElementById("greeting");
+    const mainPage = document.getElementById("mainPage");
+    document.getElementById("start").addEventListener("click",function(){
+        greeting.className = "hidden";
+        mainPage.className = "";
+    })
+
     
     //reload the page after quit
     for (const eachBtn of closeBtns) {
