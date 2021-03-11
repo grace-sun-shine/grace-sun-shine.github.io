@@ -13,12 +13,24 @@ body{
 h1{
     font-family: 'Mystery Quest', cursive;
     font-size: 60px;
-    letter-spacing: 1.5px;
+    letter-spacing: 4px;
     /* color: #45f1ff; */
     color:#BA8661;
     text-align: center;
-    padding-bottom: 40px;
+  
+    text-shadow: -1px 0 #250705, 0 1px #250705, 1px 0 #250705, 0 -1px #250705;
+    /* padding-bottom: 40px; */
 }
+
+.hero-image {
+    background-image: url("images/flash.png");
+    background-size: 350px;
+    background-position: center;
+
+    padding: 30px;
+    background-repeat: no-repeat;
+  }
+
 
 main{
     margin: auto;
